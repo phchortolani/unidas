@@ -1,0 +1,16 @@
+<div class="w-full h-7 bg-black flex items-center justify-center mx-auto">
+    <div class="w-7/11 flex items-center justify-between ">
+        <ul class="flex -space-x-0.5 text-[.625rem]">
+            @for (item of links; track item) {
+            <li>
+                <a [attr.href]="item.path" target="_blank" [style.background]="item.color" class="sitiesbar">
+                    {{ item.label }}
+                </a>
+            </li>
+            }
+        </ul>
+        <span class="text-white text-[.75rem] font-normal">
+            Central de Reservas 0800 6 121 121
+        </span>
+    </div>
+</div>

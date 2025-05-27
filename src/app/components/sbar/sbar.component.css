@@ -1,0 +1,11 @@
+.sitiesbar{
+    transform: skew(-15deg);
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: text-top;
+    line-height: 1.6rem;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.08rem 1rem;
+    color: #fff;
+}
