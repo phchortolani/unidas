@@ -10,7 +10,7 @@ export class SbarComponent {
   titulo = 'Unidas - Soluções em Tecnologia e Inovação';
   links = [
     {
-      label: 'Alugel de Carros',
+      label: 'Aluguel de Carros',
       path: '/',
       color: '#016ea7'
     },
