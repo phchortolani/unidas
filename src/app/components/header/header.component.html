@@ -1,1 +1,47 @@
-<p>header works!</p>
+<header>
+    <div class="flex items-center mx-auto w-full justify-between max-w-[1200px] ">
+        <div class="py-4.5">
+            <img src="https://www.unidas.com.br/assets/images/logo.svg" alt="Logo" class="logo min-w-max" />
+        </div>
+        <div class="flex-1">
+            <ul class="flex flex-row items-center justify-evenly">
+                @for (item of options; track $index) {
+                <li>
+                    <div class="menu">
+                        <h2>{{ item.title }}</h2>
+                    </div>
+                </li>
+                }
+            </ul>
+        </div>
+        <div class="flex flex-col menu_services_reserve text-[.875rem] border-l border-[#444] pl-4 space-y-2 w-2/11">
+            <div class="flex items-start space-x-2">
+                <div>
+                    <i-lucide [img]="CarFront" [size]="17"></i-lucide>
+                </div>
+                <div>
+                    Minhas reservas
+                </div>
+            </div>
+            <div class="flex flex-row items-center space-x-2 justify-between">
+                <div class="flex items-start space-x-1">
+                    <div>
+                        <i-lucide [img]="User" [size]="17"></i-lucide>
+                    </div>
+                    <div>
+                        Entrar
+                    </div>
+                </div>
+                <div class="flex items-start space-x-1">
+                    <div>
+                        <i-lucide [img]="User" [size]="17"></i-lucide>
+                    </div>
+                    <div>
+                        Criar Conta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
